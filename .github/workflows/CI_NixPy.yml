@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: ["master"]
   push:
-#    branches: [master]
+    branches: [master]
 
 jobs:
   testSuite:
@@ -37,7 +37,11 @@ jobs:
     - name: PYTHON - Install dependencies
       run: |
         python -m pip install --upgrade pip
+<<<<<<< HEAD
         pip install flake8 pytest coverage
+=======
+        pip install flake8 pytest
+>>>>>>> 9eb510734045b2263bbaf27d37432ea2df4bcb0b
 
     - name: PYTHON - Lint (with flake8) over project files
       run: |
@@ -58,3 +62,7 @@ jobs:
       with:
         fail_ci_if_error: true
 
+<<<<<<< HEAD
+=======
+   
+>>>>>>> 9eb510734045b2263bbaf27d37432ea2df4bcb0b
