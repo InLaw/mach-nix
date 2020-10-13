@@ -50,9 +50,9 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 ## test suite
-#    - name: PYTHON - Tests with pytest
-#      run: |
-#        pytest
+    - name: PYTHON - Tests with pytest
+      run: |
+        pytest
 ## tests build + pytest
     - name: NIX PY - Build + pytest 
       run: nix-build . 
